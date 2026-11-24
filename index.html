@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Crave - discover restaurants, explore delicious dishes and order your favourites." />
+  <title>Crave — Food, delivered with love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">Hungry? Get <strong>20% OFF</strong> your first order with code <strong>CRAVE20</strong> <span>✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">C</span> crave<span class="brand-dot">.</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#restaurants">Restaurants</a>
+      <a href="#categories">Categories</a>
+      <a href="#popular">Popular dishes</a>
+      <a href="#offers">Offers</a>
+    </nav>
+    <div class="header-actions">
+      <button class="location-pill" type="button" aria-label="Delivery location">⌖ <span>Vijayawada</span>⌄</button>
+      <button class="cart-button" id="cartButton" type="button">🛍 <span>Cart</span><b id="cartCount">0</b></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> GOOD FOOD, GOOD MOOD</div>
+        <h1>Your next<br><em>delicious</em> moment.</h1>
+        <p>From local favourites to exciting new flavours, find the food you love and get it delivered to your door.</p>
+        <div class="search-bar">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search dishes, restaurants..." aria-label="Search dishes or restaurants" />
+          <button id="searchButton" type="button">Find food</button>
+        </div>
+        <div class="hero-meta"><span>★★★★★</span> Loved by 10,000+ happy foodies <i></i> Fast delivery</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+        <div class="hero-photo"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=85" alt="Freshly baked pizza topped with vegetables"></div>
+        <div class="floating-card rating-card"><span class="rating-icon">★</span><div><strong>4.9/5</strong><small>Customer rating</small></div></div>
+        <div class="floating-card delivery-card"><span>🚴</span><div><strong>30 min</strong><small>Average delivery</small></div></div>
+        <div class="hero-sticker">made<br>with <b>♥</b></div>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading"><div><div class="eyebrow">WHAT ARE YOU CRAVING?</div><h2>Explore by <em>category</em></h2></div><a href="#popular" class="text-link">View all dishes ↗</a></div>
+      <div class="category-list" id="categoryList">
+        <button class="category active" data-category="All"><span class="category-emoji">🍽️</span><b>All food</b></button>
+        <button class="category" data-category="Pizza"><span class="category-emoji">🍕</span><b>Pizza</b></button>
+        <button class="category" data-category="Burgers"><span class="category-emoji">🍔</span><b>Burgers</b></button>
+        <button class="category" data-category="Indian"><span class="category-emoji">🍛</span><b>Indian</b></button>
+        <button class="category" data-category="Desserts"><span class="category-emoji">🍰</span><b>Desserts</b></button>
+        <button class="category" data-category="Drinks"><span class="category-emoji">🥤</span><b>Drinks</b></button>
+      </div>
+    </section>
+
+    <section class="section" id="restaurants">
+      <div class="section-heading"><div><div class="eyebrow">HANDPICKED FOR YOU</div><h2>Popular <em>restaurants</em></h2></div><a href="#restaurants" class="text-link">Explore restaurants ↗</a></div>
+      <div class="restaurant-grid">
+        <article class="restaurant-card">
+          <div class="restaurant-image"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80" alt="Pizza restaurant special"><span class="discount-tag">20% OFF</span><button class="heart" aria-label="Save Bella Pizza">♡</button></div>
+          <div class="restaurant-info"><div><h3>Bella Pizza</h3><p>Italian · Pizza · Pasta</p></div><span class="rating">★ 4.8</span></div>
+          <div class="restaurant-foot"><span>◷ 25–35 min</span><span>₹₹ · Free delivery</span></div>
+        </article>
+        <article class="restaurant-card">
+          <div class="restaurant-image"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Grilled food at a restaurant"><span class="discount-tag">BUY 1 GET 1</span><button class="heart" aria-label="Save Spice Route">♡</button></div>
+          <div class="restaurant-info"><div><h3>Spice Route</h3><p>Indian · Biryani · North Indian</p></div><span class="rating">★ 4.7</span></div>
+          <div class="restaurant-foot"><span>◷ 30–40 min</span><span>₹ · ₹25 delivery</span></div>
+        </article>
+        <article class="restaurant-card">
+          <div class="restaurant-image"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Juicy cheeseburger"><span class="discount-tag">15% OFF</span><button class="heart" aria-label="Save Burger Barn">♡</button></div>
+          <div class="restaurant-info"><div><h3>Burger Barn</h3><p>American · Burgers · Fast food</p></div><span class="rating">★ 4.6</span></div>
+          <div class="restaurant-foot"><span>◷ 20–30 min</span><span>₹ · Free delivery</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section popular-section" id="popular">
+      <div class="section-heading"><div><div class="eyebrow">THE CROWD FAVOURITES</div><h2>Popular <em>right now</em></h2></div><div class="filter-note" id="filterNote">Showing all favourites</div></div>
+      <div class="food-grid" id="foodGrid">
+        <article class="food-card" data-category="Pizza" data-name="Garden Fresh Pizza">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=80" alt="Garden fresh vegetable pizza"><span class="popular-label">BESTSELLER</span></div>
+          <div class="food-details"><div class="food-title"><h3>Garden Fresh Pizza</h3><span class="rating">★ 4.9</span></div><p>Fresh veggies, mozzarella, basil</p><div class="food-buy"><strong>₹249</strong><button class="add-button" data-item="Garden Fresh Pizza" data-price="249">+ Add</button></div></div>
+        </article>
+        <article class="food-card" data-category="Burgers" data-name="Classic Smash Burger">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Classic cheeseburger"><span class="popular-label">CUSTOMER FAVOURITE</span></div>
+          <div class="food-details"><div class="food-title"><h3>Classic Smash Burger</h3><span class="rating">★ 4.8</span></div><p>Double patty, cheddar, house sauce</p><div class="food-buy"><strong>₹189</strong><button class="add-button" data-item="Classic Smash Burger" data-price="189">+ Add</button></div></div>
+        </article>
+        <article class="food-card" data-category="Indian" data-name="Hyderabadi Dum Biryani">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=700&q=80" alt="Aromatic Indian biryani"><span class="popular-label">CHEF'S PICK</span></div>
+          <div class="food-details"><div class="food-title"><h3>Hyderabadi Dum Biryani</h3><span class="rating">★ 4.9</span></div><p>Fragrant rice, spices, raita</p><div class="food-buy"><strong>₹229</strong><button class="add-button" data-item="Hyderabadi Dum Biryani" data-price="229">+ Add</button></div></div>
+        </article>
+        <article class="food-card" data-category="Desserts" data-name="Chocolate Lava Cake">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80" alt="Chocolate dessert cake"><span class="popular-label">SWEET PICK</span></div>
+          <div class="food-details"><div class="food-title"><h3>Chocolate Lava Cake</h3><span class="rating">★ 4.7</span></div><p>Warm chocolate cake, gooey centre</p><div class="food-buy"><strong>₹119</strong><button class="add-button" data-item="Chocolate Lava Cake" data-price="119">+ Add</button></div></div>
+        </article>
+        <article class="food-card" data-category="Drinks" data-name="Mango Smoothie">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=700&q=80" alt="Fresh mango smoothie"><span class="popular-label">FRESH & COOL</span></div>
+          <div class="food-details"><div class="food-title"><h3>Mango Smoothie</h3><span class="rating">★ 4.6</span></div><p>Alphonso mango, chilled yoghurt</p><div class="food-buy"><strong>₹99</strong><button class="add-button" data-item="Mango Smoothie" data-price="99">+ Add</button></div></div>
+        </article>
+        <article class="food-card" data-category="Indian" data-name="Paneer Tikka Wrap">
+          <div class="food-image"><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=700&q=80" alt="Indian paneer wrap"><span class="popular-label">VEG SPECIAL</span></div>
+          <div class="food-details"><div class="food-title"><h3>Paneer Tikka Wrap</h3><span class="rating">★ 4.8</span></div><p>Smoky paneer, mint chutney, salad</p><div class="food-buy"><strong>₹159</strong><button class="add-button" data-item="Paneer Tikka Wrap" data-price="159">+ Add</button></div></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No dishes found. Try another search or category.</p>
+    </section>
+
+    <section class="offer-section" id="offers">
+      <div class="offer-copy"><div class="eyebrow">A LITTLE SOMETHING EXTRA</div><h2>Good food.<br><em>Better deals.</em></h2><p>Make your next meal even more satisfying with our handpicked offers.</p><div class="coupon"><span>YOUR FIRST ORDER</span><strong>CRAVE20</strong><button id="copyCoupon" type="button">Copy code</button></div></div>
+      <div class="offer-visual"><div class="offer-orbit"></div><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85" alt="Fresh pizza for a special offer"><div class="offer-burst">20%<small>OFF</small></div></div>
+    </section>
+
+    <section class="app-banner">
+      <div><div class="eyebrow">YOUR NEXT MEAL IS CALLING</div><h2>Good things are<br>just a tap away.</h2><p>Browse, choose, and enjoy. Your favourites are waiting.</p><a class="dark-button" href="#popular">Order something tasty ↗</a></div>
+      <div class="app-emoji">🍜</div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#"><span class="brand-mark">C</span> crave<span class="brand-dot">.</span></a><p>Bringing good food and good people together.</p><div class="footer-links"><a href="#restaurants">Restaurants</a><a href="#offers">Offers</a><a href="mailto:hello@example.com">Contact</a></div><small>© 2026 Crave Food Delivery. Demo website for learning purposes.</small></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="cart-panel" id="cartPanel" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">YOUR ORDER</span><h3>Your cart</h3></div><button id="closeCart" aria-label="Close cart">✕</button></div>
+    <div class="cart-items" id="cartItems"><p class="cart-empty">Your cart is waiting for something delicious.</p></div>
+    <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
+    <button class="checkout-button" id="checkoutButton">Continue to checkout ↗</button>
+    <p class="cart-disclaimer">Demo only — no real order or payment will be made.</p>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
